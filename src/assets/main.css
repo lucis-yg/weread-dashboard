@@ -1,0 +1,72 @@
+/* src/assets/main.css */
+@import "tailwindcss";
+
+/* 自定义主题 - 现代化配色 */
+@theme {
+  /* 主色调：渐变紫到蓝 */
+  --color-primary-50: #f0f4ff;
+  --color-primary-100: #e0e9ff;
+  --color-primary-200: #c7d6fe;
+  --color-primary-300: #a5bafc;
+  --color-primary-400: #8198f9;
+  --color-primary-500: #5b6ef5;
+  --color-primary-600: #3b4ce8;
+  --color-primary-700: #2d3ad6;
+  --color-primary-800: #2531bd;
+  --color-primary-900: #212d9c;
+  
+  /* 渐变定义 */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary-500), var(--color-primary-700));
+  --gradient-bg: linear-gradient(135deg, #f5f7fa 0%, #f0f4f8 100%);
+  
+  /* 阴影 */
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.08);
+  --shadow-glow: 0 0 20px rgba(91, 110, 245, 0.3);
+  
+  /* 圆角 */
+  --radius-card: 1.5rem;
+  --radius-lg: 1rem;
+}
+
+/* 自定义动画 */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* 玻璃效果类 */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+#__vue-devtools__,
+.__vue-devtools__,
+.vue-devtools,
+[data-vue-devtools] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* 隐藏所有可能的 devtools 相关元素 */
+div[id*="vue-devtools"],
+div[class*="vue-devtools"] {
+  display: none !important;
+}
