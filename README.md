@@ -1,38 +1,50 @@
-# weread-dashboard
+# 📚 WeRead Dashboard
 
-This template should help get you started developing with Vue 3 in Vite.
+一个优雅的微信读书数据可视化工具，基于 Vue 3 开发，提供书架管理、笔记查看、阅读统计等功能。
 
-## Recommended IDE Setup
+![首页](./images/shouye.png)
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## ✨ 功能特性
 
-## Recommended Browser Setup
+| 模块 | 功能 |
+|------|------|
+| 📖 首页 | 阅读概况统计、最近阅读展示 |
+| 📚 书架 | 书籍列表、读完/在读筛选 |
+| ✏️ 笔记 | 笔记汇总、划线内容、个人想法 |
+| 📊 统计 | 阅读天数、时长、偏好分析 |
+| 🔍 书籍详情 | 基本信息、阅读进度、章节目录、热门划线、书友点评、相似推荐 |
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## 🖼️ 界面预览
 
-## Customize configuration
+| 首页 | 书架 | 笔记 | 统计 |
+|------|------|------|------|
+| ![首页](./images/shouye.png) | ![书架](./images/shujia.png) | ![笔记](./images/biji.png) | ![统计](./images/tongji.png) |
 
-See [Vite Configuration Reference](https://vite.dev/config/).
 
-## Project Setup
 
-```sh
+### 书籍详情页
+
+![书籍详情](./images/xiangqing1.png)
+![书籍详情](./images/xiangqing2.png)
+![书籍详情](./images/xiangqing3.png)
+## 🛠️ 技术栈
+
+- **框架**：Vue 3 + Vite
+- **路由**：Vue Router 4
+- **样式**：Tailwind CSS
+- **HTTP**：Axios
+- **图标**：Emoji
+
+## 📦 快速开始
+
+### 环境要求
+
+- Node.js 22+
+- npm 或 pnpm
+
+### 安装依赖
+
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+# 或
+pnpm install

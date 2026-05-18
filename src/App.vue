@@ -8,7 +8,7 @@
           <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center shadow-lg">
             <span class="text-white text-sm">📚</span>
           </div>
-          <span class="font-semibold text-gray-800">WeRead<span class="text-primary-600">·AI</span></span>
+          <span class="font-semibold text-gray-800">WeRead<span class="text-primary-600"> Dashboard</span></span>
         </div>
         <div class="text-xs text-gray-400 hidden sm:block">
           你的智能阅读伙伴
